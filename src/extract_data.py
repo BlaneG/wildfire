@@ -34,7 +34,7 @@ def extract_geopandas_dataframe_from_ESRI_API(url, crs=None):
     spatial_df = spatial_df.rename(columns={'SHAPE': 'geometry'})
     sdf = gpd.GeoDataFrame(spatial_df)
     if crs:
-        sdf.set_crs(crs)
+        sdf = sdf.set_crs(crs)
     return sdf
 
 
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     check_and_extract_data(name, file_path, url, crs)
 
     # Layer: Total land and water area (ha) by ecoprovince (ID: 29)
-    name = 'ecoprovinces'
+    name = 'ecoprovinces_area'
     file_path = f'data/raw/{name}.feather'
     url = 'https://www5.agr.gc.ca/atlas/rest/services/mapservices/aafc_national_ecological_framework_of_canada/MapServer/29'
     crs = 'EPSG:3857'
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     check_and_extract_data(name, file_path, url, crs)
 
     # Layer: Total land and water area (ha) by ecoregion (ID: 16)
-    name = 'ecoregions'
+    name = 'ecoregions_area'
     file_path = f'data/raw/{name}.feather'
     url = 'https://www5.agr.gc.ca/atlas/rest/services/mapservices/aafc_national_ecological_framework_of_canada/MapServer/16'
     crs = 'EPSG:3857'
