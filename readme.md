@@ -12,7 +12,7 @@ Wildfire statistics are available as polygons describing area of land disturbed 
 
 ![approach](figures/overview.png)
 
-As a validation check, we can see that the cumulative area disturbed by wildfire in ecoregion 65 was 20% over 33 years while it is estimated to be 17% in the cumulat
+As a validation check, we can see that the cumulative area disturbed by wildfire in ecoregion 65 was 20% over 33 years while it is estimated to be 17% in the cumulative disturbance probability plot.
 
 ![cdf-validation](figures/cdf-validation.png)
 
