@@ -1,0 +1,16 @@
+name: temp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas=0.9.0=pyhd8ed1ab_0
+  - ipykernel=5.4.2=py38h7b7c402_0
+  - ipywidgets=7.5.1=pyh9f0ad1d_1
+  - matplotlib-base=3.3.4=py38h34ddff4_0
+  - notebook=6.1.5=py38haa244fe_0
+  - numpy=1.20.0=py38h0cc643e_0
+  - pandas=1.1.5=py38h4c96930_0
+  - plotly=4.14.3=pyh44b312d_0
+  - python=3.8.6=h7840368_5_cpython
+  - scipy=1.5.3=py38h5f893b4_0
+

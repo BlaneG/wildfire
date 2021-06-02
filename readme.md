@@ -19,11 +19,14 @@ As a validation check, we can see that the cumulative area disturbed by wildfire
 ## Limitations
 Wildfire is caused by fuel load, climate (moisture, temperature) and ignition sources (lightning, human sources). Temporal wildfire PDFs generated from historical statistics are biased estimates of the liklihood of wildfire for any particular land area when these PDFs are developed without controlling for these other variables that are causal determinants of wildfire. Developing wildfire PDFs by ecoregion helps to control for (historical) climate. Within each ecozone, these wildfire PDFs are likely to overestimate wildfire frequency for forests with recent disturbances (wildfire, harvesting) that have a reduced fuel load, and also to underestimate wildfire frequency for forest stands that have higher fuel loads like increased deadwood from mountain pine beetle.
 
-Using geometries that are too narrowly defined may lead to biased estimates of wildfire risk if historical wildfire statistics in these small areas are not representative of actual wildfire risk.  Similarly, defining geometries too broadly can lead to locally biased estimates of wildfire risk by overestimating wildfire risk in some areas and understimating wildfire risk in other areas.  
+Using geometries that are too narrowly defined may lead to biased estimates of wildfire risk if historical wildfire statistics in these small areas are not representative of actual wildfire risk.  Similarly, defining geometries too broadly can lead to locally biased estimates of wildfire risk by overestimating wildfire risk in some areas and understimating wildfire risk in other areas.
 
 ## Future work
 For applying the wildfire PDFs to estimate loss of biomass from forests, the approach would benefit from normalizing to total forested area within a polygon rather than total land area as currently implemented.
 
 
 ## Installation
-Fork the repository and run `pip install requirements.txt`.
+1. install python using anaconda
+2. fork the repository
+3. open the Anaconda prompt and run `conda env create -f environment.yml`
+4. run `python scr\extract_data.py` to download the raw data
